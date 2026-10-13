@@ -1,0 +1,90 @@
+.sidebar {
+  width: 224px;
+  flex-shrink: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 10px 16px;
+  color: #c5e7f5;
+  background: #0b1a27;
+}
+
+.sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 0;
+  border-bottom: 1px solid #304c60;
+}
+
+.sidebar-brand strong {
+  font-size: 22px;
+}
+
+.sidebar-brand span {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav {
+  flex: 1;
+}
+
+.sidebar-group {
+  padding: 18px 0;
+  border-bottom: 1px solid #304c60;
+}
+
+.sidebar-group:last-child {
+  border-bottom: 0;
+}
+
+.sidebar-group h2 {
+  margin: 0 10px 10px;
+  color: #8bd5f4;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.sidebar-item {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar-item-active {
+  color: #fff;
+  background: #234760;
+}
+
+.sidebar-item:hover {
+  background: #183247;
+}
+
+.sidebar-item:focus-visible {
+  outline: 2px solid #8bd5f4;
+  outline-offset: -2px;
+}
+
+.sidebar-footer {
+  padding-top: 16px;
+  border-top: 1px solid #304c60;
+  text-align: center;
+  font-size: 11px;
+}
+
+.sidebar-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+}

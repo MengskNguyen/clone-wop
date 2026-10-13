@@ -1,0 +1,238 @@
+.app-layout {
+  display: flex;
+  min-height: 100svh;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  background: #f2f9ff;
+}
+
+.login-page {
+  min-height: 100svh;
+  padding: 88px 20px 40px;
+  background-color: #000;
+  background-image:
+  linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)),
+  url('/login-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  width: 360px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.login-container h1 {
+  margin: 0 0 32px;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-card {
+  padding: 40px 24px 32px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.login-card h2 {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.required {
+  color: #d43838;
+}
+
+.login-card input {
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  color: #173954;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.login-card input:focus-visible {
+  outline: 2px solid #376e98;
+  outline-offset: 2px;
+}
+
+#email {
+  margin-bottom: 22px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 56px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 10px;
+  color: #666;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.login-submit {
+  width: 100%;
+  margin-top: 28px;
+  padding: 9px;
+  color: #fff;
+  background: #376e98;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.login-submit:hover {
+  background: #2a5678;
+}
+
+.login-message {
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+.login-message:empty {
+  display: none;
+}
+
+.login-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.login-message-error {
+  color: #c62828;
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding-top: 48px;
+  }
+}
+
+.login-card .remember-login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-card .remember-login input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  accent-color: #376e98;
+}
+
+.home-page {
+  flex: 1;
+  min-width: 0;
+  padding: 32px 20px;
+  color: #173954;
+}
+
+.home-page h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.auth-loading {
+  margin: 0;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.home-intro {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d1e3ef;
+}
+
+.home-intro p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.home-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.shortcut-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 80px;
+  padding: 20px 24px;
+  color: #24557a;
+  background: #fff;
+  border: 1px solid #d6e5f0;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgb(23 63 99 / 5%);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.shortcut-card svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.shortcut-card:hover {
+  background: #f8fcff;
+  border-color: #84b5d5;
+}
+
+.shortcut-card:focus-visible {
+  outline: 2px solid #376e98;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1200px) {
+  .home-shortcuts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .home-shortcuts {
+    grid-template-columns: 1fr;
+  }
+}

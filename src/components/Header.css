@@ -1,0 +1,116 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding: 10px 20px;
+  color: #fff;
+  background: #173f63;
+  border-bottom: 3px solid #e7b52c;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.account {
+  position: relative;
+  min-width: 0;
+}
+
+.account-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 260px;
+  padding: 6px 10px;
+  color: #fff;
+  background: #2a5375;
+  border: 1px solid #66849b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.account-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: #173f63;
+  background: #d8edf8;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.account-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.account-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 260px;
+  max-width: calc(100vw - 40px);
+  padding: 16px;
+  color: #24557a;
+  background: #fff;
+  border: 1px solid #dce5ec;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+  overflow-wrap: anywhere;
+}
+
+.account-panel strong {
+  font-size: 14px;
+}
+
+.account-panel > span {
+  color: #647b90;
+  font-size: 12px;
+}
+
+.logout-button {
+  margin-top: 4px;
+  padding: 12px 0 0;
+  color: #c62828;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #e1e8ee;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.account-error {
+  margin: 0;
+  color: #c62828;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .account-trigger {
+    max-width: 180px;
+  }
+}
